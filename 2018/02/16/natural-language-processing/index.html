@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My Github">
+    <meta name="keyword" content="Qq2316627# seo key words">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
+    <link rel="alternate" type="application/atom+xml" title="C’est la vie" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        自然语言处理(natural language processing)｜AndyQian&#39;s blog
+        
+    </title>
+
+    <link rel="canonical" href="http://AndyQianq.github.io/2018/02/16/natural-language-processing/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('//o7bkkhiex.bkt.clouddn.com/lion-blur-bg.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    C’est la vie
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/Tags/">Tags</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://img.hb.aicdn.com/6c3cd57968daf8337148a931b5b2bf8a5ba0efb11c4e85-u3qgxm_fw658">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://img.hb.aicdn.com/6c3cd57968daf8337148a931b5b2bf8a5ba0efb11c4e85-u3qgxm_fw658')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>自然语言处理(natural language processing)</h1>
+                    
+                    <span class="meta">
+                         作者 Andy Qian
+                        <span>
+                          日期 2018-02-16
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#project"
+                           title="project">project</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            自然语言处理(natural language processing)
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <hr>
+<h1 id="自然语言处理"><a href="#自然语言处理" class="headerlink" title="自然语言处理"></a>自然语言处理</h1><h2 id="n-gram算法"><a href="#n-gram算法" class="headerlink" title="n-gram算法"></a>n-gram算法</h2><h3 id="阅读前建议"><a href="#阅读前建议" class="headerlink" title="阅读前建议"></a>阅读前建议</h3><ul>
+<li>读者可以阅读《数学之美》（吴军著），里面的内容浅显易懂，适合对计算机领域有兴趣的人群阅读。</li>
+</ul>
+<h3 id="正文部分"><a href="#正文部分" class="headerlink" title="正文部分"></a>正文部分</h3><ul>
+<li><p>Natural Language Processing是AI的一个子领域，在NLP（自然语言处理）中有一个很有意思的问题：</p>
+</li>
+<li><p>此处引用百度百科的例子：</p>
+<ul>
+<li>“我们把香蕉给猴子，因为它们饿了”</li>
+<li>“我们把香蕉给猴子，因为它们熟透了”</li>
+</ul>
+</li>
+<li><p>你一定可以很快的看出“它们”在这两个句子里分别指的是猴子和香蕉。那么问题来了，机器是如何识别“它们”在不同句子里的指代呢？</p>
+</li>
+<li>这也是自然语言处理中常见的问题，即语义的理解。</li>
+<li>除此之外，自然语言中还存在很多存在歧义的词语，同音的词语，句法也存在模糊性。随着网络不断深入人们的生活，网络用词，例如近年来的“呵呵”“给力”等词语，都增加了问题的难度，甚至还出现了一些根本不存在的词语。在这些问题的上，很多前辈都做出了不少的努力。（如果想要了解这段历史可以阅读《数学之美》系列八贾里尼克的故事和现代语言处理和系列二十一自然语言处理的教父-马库斯）</li>
+</ul>
+<h3 id="统计语言模型"><a href="#统计语言模型" class="headerlink" title="统计语言模型"></a>统计语言模型</h3><ul>
+<li><p>成功利用数学方法解决自然语言处理问题的是贾里尼克，就是他提出了统计语言模型。</p>
+</li>
+<li><p><strong>那么什么是统计语言模型？</strong></p>
+<ul>
+<li>如果用S表示一段特定序列的词语w1，w2……wn组成的句子，那么机器对语言的识别从一定角度来看就是知道S在文本中出现的可能性。</li>
+<li>即P（S）=P（w1）P（w2|w1）P（w3|w1w2）……P（wn|w1w2……wn-1）</li>
+<li>通过马尔科夫假设，我们假定任意一个词wi的出现该来只和它前面的wi-1有关，那么S出现的概率为：</li>
+<li>P（S）=P（w1）P（w2|w1）P（w3|w2）……P（wi|wi-1）……</li>
+<li>（这里的wi-1可以取wi-n即一个词可以由前面的N-1个词来决定）</li>
+</ul>
+</li>
+<li><p>注释：</p>
+</li>
+<li><p>马尔科夫假设：</p>
+<ul>
+<li>t+1时刻系统状态的概率分布只和t时刻的状态有关，与t时刻以前的状态无关；</li>
+<li>从t时刻到t+1时刻的状态转移和t的值无关。（有兴趣深入了解可以阅读《信息论与编码》电子科技大学出版第二章第七节：马尔可夫信源）</li>
+</ul>
+</li>
+<li><p>那么在得到一个足够完善的词料库之后，我们通过统计词频，就可以通过计算得到一个句子的出现的概率，自然概率越高，这个句子就符合该语料下的规则。</p>
+</li>
+<li><p>这里又提出了一个概念即n-gram语言模型</p>
+</li>
+<li><p>由刚刚的统计语言模型，我们不妨假设wi的概率由w1，……wi-1来决定，那么设这个特定的一组序列w，……，wi-1成为wi的历史（history）</p>
+</li>
+<li><p>显然我们意识到一个问题：随着历史基元的增长，不同的历史（路径）会按照指数级增长。对于第i个统计基元，历史基元的个数为i-1，如果共有L个不同的基元，则i基元就有Li-1种不同的历史情况。模型中有Lm个自由参数P（wm|w1……wm-1）.<br><img src="https://wx2.sinaimg.cn/mw1024/006KEMKngy1fohmud54pqj30i309bgm7.jpg" alt="alter"></p>
+</li>
+<li><p>那么这里举个例子，当L=5000，m=3，自由参数的数目为1250亿。自然这时我们必须想一个解决的方法，这里最直接的想法就是减少历史基元的个数即使用等价类，利用一个映射，将w1w2……wi-1映射到 S（w1w2……wi-1）。自然等价类的数目是远远小于原来不同历史基元的数目的。</p>
+</li>
+<li>P（wi|w1……wi-1）=P（wi| S（w1w2……wi-1））</li>
+<li><p>有了这个想法，我们自然就要考虑如果划分等价类。基于这种想法，我们提出了n元文法</p>
+<ul>
+<li>n=1——》uni-gram 即wi独立于历史</li>
+<li>n=2——》bi-gram 基于1阶马尔可夫链</li>
+<li>n=3——》tri-gram 基于2阶马尔可夫链</li>
+</ul>
+</li>
+<li><p>再举一个简单的例子：</p>
+<ul>
+<li>给定句子：John read a book</li>
+<li>增加标记：(BOS)John read a book(EOS)</li>
+<li>Unigram：(BOS), John, read, a, book, (EOS)</li>
+<li>Bigram: ((BOS)John), (John read), (read a), (a book), (book (EOS))</li>
+<li>Trigram: ((BOS)John read), (John read a), (read a book), (a book (EOS))</li>
+</ul>
+</li>
+<li><p>即二元文法的概率为：</p>
+</li>
+<li>P(John read a book) =P(John(BOS)×P(read|John)×P(a|read)×P(book|a)×P((EOS)|book)</li>
+</ul>
+<h5 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h5><ul>
+<li>如果汉字的总数为：N<ul>
+<li><strong>一元语法：</strong></li>
+<li>1）样本空间为 N</li>
+<li>2）只选择使用频率最高的汉字</li>
+<li><strong>二元语法：</strong></li>
+<li>1）样本空间为 N2</li>
+<li>2）效果比一元语法明显提高</li>
+<li><strong>估计对汉字而言四元语法效果会好一些</strong></li>
+<li>智能狂拼、微软拼音输入法基于 n-gram.</li>
+</ul>
+</li>
+<li>那么问题又来了，如何得到n-gram文法？<ul>
+<li><strong>这里引入两个概念：</strong></li>
+<li>Training data（训练语料）：用于建立模型，确定模型参数的已知语料</li>
+<li>Maximum Likelihood Evaluation（最大似然估计）：用相对频率计算概率的方法<h6 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h6></li>
+</ul>
+</li>
+<li>例如，这里给定训练语料：<ul>
+<li>“John read Moby Dick”，</li>
+<li>“Mary read a different book”,</li>
+<li>“She read a book by Cher”</li>
+</ul>
+</li>
+<li>那么2元文法求句子的概率为多少？（读者最好自己思考一下）</li>
+</ul>
+<hr>
+<h6 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h6><ul>
+<li><p>首先我们对句子进行标识</p>
+<ul>
+<li>(BOS)John read Moby Dick(EOS)</li>
+<li>(BOS)Mary read a different book(EOS)</li>
+<li>(BOS)She read a book by Cher(EOS)</li>
+</ul>
+</li>
+<li>通过上面所说的二元文法概念我们很容易得到John read a book的概率为：</li>
+</ul>
+<p><img src="http://wx2.sinaimg.cn/large/006KEMKngy1fohmuldbelj30ox09dmyt.jpg" alt="alter"></p>
+<ul>
+<li><p>但是如果我们要处理的句子是：Cher read a book呢？</p>
+</li>
+<li><p>很快我们发现，语料中并没有cher这个单词，那么自然这个句子的概率就是0了。</p>
+</li>
+<li>这其实是NLP中常见的问题，即数据匮乏而引起的零概率问题，如何解决这个问题，即我们要说明的第二个重点。</li>
+</ul>
+<h2 id="data-smoothing（数据平滑处理）"><a href="#data-smoothing（数据平滑处理）" class="headerlink" title="data smoothing（数据平滑处理）"></a>data smoothing（数据平滑处理）</h2><h3 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h3><ul>
+<li>数据平滑的基本思想可以用一个词语概括：“劫富济贫”</li>
+<li>即使得零概率增值，使得非零概率下调。</li>
+<li>但是这个思想要基于一个基本约束，即：</li>
+</ul>
+<p><img src="http://wx3.sinaimg.cn/mw690/006KEMKngy1fohmuu6gp9j30bp03bwef.jpg" alt="alter"></p>
+<h3 id="方法分类"><a href="#方法分类" class="headerlink" title="方法分类"></a>方法分类</h3><ul>
+<li><p>这里我们介绍一下几种常见的数据平滑处理方法：</p>
+<ul>
+<li>1）    拉普拉斯平滑（加1法）</li>
+<li>2）    古德图灵法（good-turing）</li>
+<li>3）    Katz后退法（Back-off）</li>
+<li>4）    绝对值减法（Absolute Discounting）</li>
+<li>5）    线性减值法（Linear Discounting）</li>
+</ul>
+</li>
+<li><p>这里重点讲一下（1）和（2）</p>
+</li>
+</ul>
+<h4 id="加一法："><a href="#加一法：" class="headerlink" title="加一法："></a>加一法：</h4><h5 id="拉普拉斯平滑"><a href="#拉普拉斯平滑" class="headerlink" title="拉普拉斯平滑"></a>拉普拉斯平滑</h5><ul>
+<li><p>对于2-gram：<br><img src="http://wx3.sinaimg.cn/mw690/006KEMKngy1fohmuxqrn1j30ef07q74l.jpg" alt="alter"></p>
+</li>
+<li><p>其中，V 为被考虑语料的词汇量（全部可能的基元数）。</p>
+</li>
+</ul>
+<h6 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h6><ul>
+<li>(BOS)John read Moby Dick(EOS)</li>
+<li>(BOS)Mary read a different book(EOS)</li>
+<li><p>(BOS)She read a book by Cher(EOS)</p>
+<ul>
+<li><strong> P(Cher read a book) = P(Cher|(BOS)×P(read|Cher)×P(a|read)×P(book|a)× P((EOS)|book)</strong></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>没有处理：</strong></p>
+<ul>
+<li>P(Cher|(BOS)) = 0/3</li>
+<li>P(read|Cher) = 0/1</li>
+<li>P(a|read) = 2/3</li>
+<li>P(book|a) = 1/2</li>
+<li>P((EOS)|book)= 1/2</li>
+</ul>
+</li>
+<li><p>词汇量：|V|＝11</p>
+</li>
+<li><p><strong>平滑以后：</strong></p>
+<ul>
+<li>P(Cher|(BOS)) = (0+1)/(11+3) = 1/14</li>
+<li>P(read|Cher) = (0+1)/(11+1) = 1/12</li>
+<li>P(a|read) = (1+2)/(11+3) = 3/14</li>
+<li>P(book|a) = (1+1)/(11+2) = 2/13</li>
+<li>P((EOS)|book)= (1+1)/(11+2) = 2/13</li>
+<li><strong>P(Cher read a book) = 0.00003</strong></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>同理:</strong></p>
+<ul>
+<li>P(John|(BOS)) = 2/14, P(read|John) = 2/12,</li>
+<li>P(a|read) = 3/14, P(book|a) = 2/13,</li>
+<li>P(John read a book)=P(John|(BOS))×P(read|John)×P(a|read)×P(book|a)×P((EOS)|book)=0.0001</li>
+</ul>
+</li>
+</ul>
+<h4 id="减值法："><a href="#减值法：" class="headerlink" title="减值法："></a>减值法：</h4><ul>
+<li>基本思想：修改训练样本中事件的实际计数，使样本中(实际出现的)不同事件的概率之和小于1，剩余的概率量分配给未见概率。</li>
+<li>以上所说的2）3）4）5）均属于减值法</li>
+<li>这里重点说一下2）Good-Turing估计</li>
+<li>这种估计适用于大词汇集产生的符合多项式分布的大量的观察数据。</li>
+</ul>
+<h5 id="Good-Turing估计"><a href="#Good-Turing估计" class="headerlink" title="Good-Turing估计"></a>Good-Turing估计</h5><ul>
+<li><p>内容：</p>
+<ul>
+<li>假设 N 是原来训练样本数据的大小， nr 是在样本中正好出现 r 次的事件的数目(在这里，事件为 n-gram w1, w2, …, wn)，即：出现 1 次的 n1个，出现 2 次的 n2个, ……<br><img src="http://wx3.sinaimg.cn/mw690/006KEMKngy1fohmv1bxizj30mj0au759.jpg" alt="alter"></li>
+</ul>
+</li>
+</ul>
+<h6 id="例子-2"><a href="#例子-2" class="headerlink" title="例子"></a>例子</h6><ul>
+<li>这里也举一个例子，引用</li>
+</ul>
+<p><img src="http://wx4.sinaimg.cn/mw690/006KEMKngy1fohmv58n38j316g0ma7ea.jpg" alt="alter"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li><p>其余几种减值法的数据平滑读者可以查询其余资料，这里就不累述了。这里我只是简单的对这四种减值法比较，读者可以通过比较进行针对的查询。</p>
+<ul>
+<li>Good-Turing 法：对非0事件按公式削减出现的次 数，余留出来的概率均分给0概率事件。</li>
+<li>Katz 后退法：对非0事件按Good-Turing法计算减 值，余留出来的概率按低阶分布分给0概率事件。</li>
+<li>绝对减值法：对非0事件无条件削减某一固定的出现次数值，余留出来的概率均分给0概率事件。</li>
+<li>线性减值法：对非0事件根据出现次数按比例削减次数值，余留出来的概率均分给0概率事件。</li>
+</ul>
+</li>
+</ul>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/02/15/新年小记/" data-toggle="tooltip" data-placement="top"
+                           title="新年小记">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+                <!-- 来必力City版安装代码 -->
+                <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDE3MS8xMDcwOA==">
+                    <script type="text/javascript">
+                        (function(d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
+
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                </div>
+                <!-- City版安装代码已完成 -->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#自然语言处理"><span class="toc-text">自然语言处理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#n-gram算法"><span class="toc-text">n-gram算法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#阅读前建议"><span class="toc-text">阅读前建议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正文部分"><span class="toc-text">正文部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#统计语言模型"><span class="toc-text">统计语言模型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#补充"><span class="toc-text">补充</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#例子"><span class="toc-text">例子</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#解答"><span class="toc-text">解答</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#data-smoothing（数据平滑处理）"><span class="toc-text">data smoothing（数据平滑处理）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#引入"><span class="toc-text">引入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法分类"><span class="toc-text">方法分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#加一法："><span class="toc-text">加一法：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#拉普拉斯平滑"><span class="toc-text">拉普拉斯平滑</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#例子-1"><span class="toc-text">例子</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#减值法："><span class="toc-text">减值法：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Good-Turing估计"><span class="toc-text">Good-Turing估计</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#例子-2"><span class="toc-text">例子</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#project"
+                           title="project">project</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/ehazon">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/是大家">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/檀no樱">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/AndyQianq">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; C’est la vie 2018
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://AndyQianq.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?" + _baId;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="">
+</body>
+
+</html>
