@@ -47,7 +47,7 @@
     
     <title>
         
-            自然语言处理(natural language processing) | 
+            鲸落 | 
         
         AndyQian‘s blog
     </title>
@@ -58,7 +58,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content=",project">
+    <meta name="keywords" content=",painting">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -219,7 +219,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="AndyQian‘s blog">
-    <meta name="msapplication-starturl" content="http://AndyQianq.github.io/2018/02/16/natural-language-processing/">
+    <meta name="msapplication-starturl" content="http://AndyQianq.github.io/2017/07/23/鲸落/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="AndyQian‘s blog">
@@ -234,16 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://AndyQianq.github.io/2018/02/16/natural-language-processing/">
+    <meta property="og:url" content="http://AndyQianq.github.io/2017/07/23/鲸落/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="自然语言处理(natural language processing) | AndyQian‘s blog">
+    <meta property="og:title" content="鲸落 | AndyQian‘s blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    <meta property="og:article:tag" content="project"> 
+    <meta property="og:article:tag" content="painting"> 
 
     
-        <meta property="article:published_time" content="Fri Feb 16 2018 23:05:09 GMT+0800">
-        <meta property="article:modified_time" content="Fri Feb 16 2018 01:19:10 GMT+0800">
+        <meta property="article:published_time" content="Sun Jul 23 2017 10:18:51 GMT+0800">
+        <meta property="article:modified_time" content="Sat Feb 17 2018 11:29:02 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +251,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://AndyQianq.github.io/2018/02/16/natural-language-processing/index.html" />
+        <link rel="canonical" href="http://AndyQianq.github.io/2017/07/23/鲸落/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,16 +263,16 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://AndyQianq.github.io/2018/02/16/natural-language-processing/index.html",
-    "headline": "自然语言处理(natural language processing)",
-    "datePublished": "Fri Feb 16 2018 23:05:09 GMT+0800",
-    "dateModified": "Fri Feb 16 2018 01:19:10 GMT+0800",
+    "mainEntityOfPage": "http://AndyQianq.github.io/2017/07/23/鲸落/index.html",
+    "headline": "鲸落",
+    "datePublished": "Sun Jul 23 2017 10:18:51 GMT+0800",
+    "dateModified": "Sat Feb 17 2018 11:29:02 GMT+0800",
     "author": {
         "@type": "Person",
-        "name": "Andyqian",
+        "name": "AndyQian",
         "image": {
             "@type": "ImageObject",
-            "url": "http://img.hb.aicdn.com/df28bc097a3dd0306c76c8d1e094a84cd273523597732-cuog9O_fw658"
+            "url": "https://i.loli.net/2018/02/17/5a87c292a9288.jpg"
         },
         "description": "C’est la vie"
     },
@@ -284,7 +284,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",project",
+    "keywords": ",painting",
     "description": "",
 }
 </script>
@@ -350,7 +350,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#自然语言处理"><span class="post-toc-number">1.</span> <span class="post-toc-text">自然语言处理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#n-gram算法"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">n-gram算法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#阅读前建议"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">阅读前建议</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#正文部分"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">正文部分</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#统计语言模型"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">统计语言模型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#补充"><span class="post-toc-number">1.1.3.0.1.</span> <span class="post-toc-text">补充</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#例子"><span class="post-toc-number">1.1.3.0.1.1.</span> <span class="post-toc-text">例子</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#解答"><span class="post-toc-number">1.1.3.0.1.2.</span> <span class="post-toc-text">解答</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#data-smoothing（数据平滑处理）"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">data smoothing（数据平滑处理）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#引入"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">引入</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#方法分类"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">方法分类</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#加一法："><span class="post-toc-number">1.2.2.1.</span> <span class="post-toc-text">加一法：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#拉普拉斯平滑"><span class="post-toc-number">1.2.2.1.1.</span> <span class="post-toc-text">拉普拉斯平滑</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#例子-1"><span class="post-toc-number">1.2.2.1.1.1.</span> <span class="post-toc-text">例子</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#减值法："><span class="post-toc-number">1.2.2.2.</span> <span class="post-toc-text">减值法：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Good-Turing估计"><span class="post-toc-number">1.2.2.2.1.</span> <span class="post-toc-text">Good-Turing估计</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#例子-2"><span class="post-toc-number">1.2.2.2.1.1.</span> <span class="post-toc-text">例子</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#总结"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">总结</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#写在前面"><span class="post-toc-number">1.</span> <span class="post-toc-text">写在前面</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#正文部分"><span class="post-toc-number">2.</span> <span class="post-toc-text">正文部分</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于鲸落"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">关于鲸落</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#主题"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">主题</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#准备工作"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">准备工作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#新建文件"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">新建文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#关于构图"><span class="post-toc-number">2.2.2.</span> <span class="post-toc-text">关于构图</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主要工作"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">主要工作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#环境色"><span class="post-toc-number">2.3.1.</span> <span class="post-toc-text">环境色</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#光效果"><span class="post-toc-number">2.3.2.</span> <span class="post-toc-text">光效果</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#细节上色"><span class="post-toc-number">2.3.3.</span> <span class="post-toc-text">细节上色</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#关于字体"><span class="post-toc-number">2.3.4.</span> <span class="post-toc-text">关于字体</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#总结"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">总结</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -382,7 +382,7 @@
         
     
             <p class="article-headline-p">
-                自然语言处理(natural language processing)
+                鲸落
             </p>
         </div>
 
@@ -396,12 +396,12 @@
 
     <!-- Author Avatar -->
     <div id="author-avatar">
-        <img src="http://img.hb.aicdn.com/df28bc097a3dd0306c76c8d1e094a84cd273523597732-cuog9O_fw658" width="44px" height="44px" alt="Author Avatar"/>
+        <img src="https://i.loli.net/2018/02/17/5a87c292a9288.jpg" width="44px" height="44px" alt="Author Avatar"/>
     </div>
     <!-- Author Name & Date -->
     <div>
-        <strong>Andyqian</strong>
-        <span>2月 16, 2018</span>
+        <strong>AndyQian</strong>
+        <span>7月 23, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -416,6 +416,18 @@
 
     <!-- Qrcode -->
     
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=http://AndyQianq.github.io/2017/07/23/鲸落/">
+    
+</ul>
+
+    
 
     <!-- Tags (bookmark) -->
     
@@ -425,7 +437,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/project/">project</a>
+        <a class="post_tag-link" href="/tags/painting/">painting</a>
     </ul>
     
 
@@ -453,7 +465,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=自然语言处理(natural language processing)&url=http://AndyQianq.github.io/2018/02/16/natural-language-processing/index.html&pic=http://AndyQianq.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=鲸落&url=http://AndyQianq.github.io/2017/07/23/鲸落/index.html&pic=http://AndyQianq.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -462,7 +474,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=自然语言处理(natural language processing)&url=http://AndyQianq.github.io/2018/02/16/natural-language-processing/index.html&via=Andyqian" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=鲸落&url=http://AndyQianq.github.io/2017/07/23/鲸落/index.html&via=AndyQian" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -471,7 +483,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://AndyQianq.github.io/2018/02/16/natural-language-processing/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://AndyQianq.github.io/2017/07/23/鲸落/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -480,7 +492,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://AndyQianq.github.io/2018/02/16/natural-language-processing/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://AndyQianq.github.io/2017/07/23/鲸落/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -505,212 +517,177 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <hr>
-<h1 id="自然语言处理"><a href="#自然语言处理" class="headerlink" title="自然语言处理"></a>自然语言处理</h1><h2 id="n-gram算法"><a href="#n-gram算法" class="headerlink" title="n-gram算法"></a>n-gram算法</h2><h3 id="阅读前建议"><a href="#阅读前建议" class="headerlink" title="阅读前建议"></a>阅读前建议</h3><ul>
-<li>读者可以阅读《数学之美》（吴军著），里面的内容浅显易懂，适合对计算机领域有兴趣的人群阅读。</li>
+        <p><img src="https://wx4.sinaimg.cn/mw1024/006KEMKnly1foj8fkb6a9j31kw28hx06.jpg" alt=""></p>
+<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><ul>
+<li>最近给社团画的练习图，记录了绘画过程。</li>
+<li>自学板绘也学了半年了，之前撸了那么多次sai，现在终于进阶到了ps了。</li>
+<li>花了一下午，从昨天晚上收集资料，花了6、7个小时的时间。</li>
+<li>此教程适合小白使用。</li>
 </ul>
-<h3 id="正文部分"><a href="#正文部分" class="headerlink" title="正文部分"></a>正文部分</h3><ul>
-<li><p>Natural Language Processing是AI的一个子领域，在NLP（自然语言处理）中有一个很有意思的问题：</p>
+<h1 id="正文部分"><a href="#正文部分" class="headerlink" title="正文部分"></a>正文部分</h1><h2 id="关于鲸落"><a href="#关于鲸落" class="headerlink" title="关于鲸落"></a>关于鲸落</h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><ul>
+<li><p>“你知道这世界上有 一种现象叫‘鲸落’吗？鲸鱼死后尸体沉 在海底下，供养其他水生物仍能生活几 十年，在我看来就像一个温柔的奇迹， 用自己的身体，建立起一个孤独的岛屿。”<br>——《深海中的温柔孤岛》</p>
 </li>
-<li><p>此处引用百度百科的例子：</p>
+<li><p>全世界鲸目物种有80多个，但是只有达到30吨级别的大型鲸才能真正形成繁盛的鲸落——这就只剩下不到十种，而其中一半是濒危的。过去两百年里，工业化捕鲸将大型鲸推入了十分危急的境地，今天全球海洋里的鲸落数量，可能只有以前的不足六分之一。</p>
+</li>
+</ul>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="新建文件"><a href="#新建文件" class="headerlink" title="新建文件"></a>新建文件</h3><ul>
+<li><p>我是选择A4纸格式、分辨率定为300</p>
+</li>
+<li><p>这里说一下，如果要考虑图片的打印效果，分辨率默认是300，但是如果是平时作图，不用打印的话，72的分辨率就绰绰有余了</p>
+</li>
+</ul>
+<p><img src="https://wx2.sinaimg.cn/mw1024/006KEMKnly1foj8fm4cwgj30k00bu3z7.jpg" alt=""></p>
+<h3 id="关于构图"><a href="#关于构图" class="headerlink" title="关于构图"></a>关于构图</h3><ul>
+<li>既然是鲸落，首先想到的就是鲸鱼啊!</li>
+<li>在资料的部分我讲过，座头鲸比较适合作画。</li>
+<li><p>原因如下：</p>
 <ul>
-<li>“我们把香蕉给猴子，因为它们饿了”</li>
-<li>“我们把香蕉给猴子，因为它们熟透了”</li>
+<li>1.体型大但是结构匀称，不想抹香鲸显得头重脚轻。</li>
+<li>2.色彩统一，不像虎鲸的颜色对比太过于显眼。</li>
+<li>3.座头鲸又叫做“大翅鲸”，鱼鳍宽大，很容易让画面显得飘逸。<br><img src="https://wx3.sinaimg.cn/mw1024/006KEMKnly1foj8forjb4j30k00e9q3h.jpg" alt=""></li>
 </ul>
 </li>
-<li><p>你一定可以很快的看出“它们”在这两个句子里分别指的是猴子和香蕉。那么问题来了，机器是如何识别“它们”在不同句子里的指代呢？</p>
+<li><p>如果画面只有一条鲸鱼，一来画面单调，二来没有参考物，读者感受不到鲸鱼的庞大.</p>
 </li>
-<li>这也是自然语言处理中常见的问题，即语义的理解。</li>
-<li>除此之外，自然语言中还存在很多存在歧义的词语，同音的词语，句法也存在模糊性。随着网络不断深入人们的生活，网络用词，例如近年来的“呵呵”“给力”等词语，都增加了问题的难度，甚至还出现了一些根本不存在的词语。在这些问题的上，很多前辈都做出了不少的努力。（如果想要了解这段历史可以阅读《数学之美》系列八贾里尼克的故事和现代语言处理和系列二十一自然语言处理的教父-马库斯）</li>
-</ul>
-<h3 id="统计语言模型"><a href="#统计语言模型" class="headerlink" title="统计语言模型"></a>统计语言模型</h3><ul>
-<li><p>成功利用数学方法解决自然语言处理问题的是贾里尼克，就是他提出了统计语言模型。</p>
-</li>
-<li><p><strong>那么什么是统计语言模型？</strong></p>
+<li><p>就像学《逍遥游》的时候</p>
 <ul>
-<li>如果用S表示一段特定序列的词语w1，w2……wn组成的句子，那么机器对语言的识别从一定角度来看就是知道S在文本中出现的可能性。</li>
-<li>即P（S）=P（w1）P（w2|w1）P（w3|w1w2）……P（wn|w1w2……wn-1）</li>
-<li>通过马尔科夫假设，我们假定任意一个词wi的出现该来只和它前面的wi-1有关，那么S出现的概率为：</li>
-<li>P（S）=P（w1）P（w2|w1）P（w3|w2）……P（wi|wi-1）……</li>
-<li>（这里的wi-1可以取wi-n即一个词可以由前面的N-1个词来决定）</li>
+<li>北冥有鱼，其名为鲲,鲲之大不知其几千里也。</li>
 </ul>
 </li>
-<li><p>注释：</p>
+<li><p>文字可以用几千里来做比较，但是画面只有A4纸的大小。</p>
 </li>
-<li><p>马尔科夫假设：</p>
+<li>于是，我加了一个少女的形象来作为参照。</li>
+<li>建议画图的时候，打开导航器，就可以直观的感受画面效果。<br><img src="https://wx1.sinaimg.cn/mw1024/006KEMKnly1foj8fr0j9mj30k00gimxr.jpg" alt=""><h2 id="主要工作"><a href="#主要工作" class="headerlink" title="主要工作"></a>主要工作</h2><h3 id="环境色"><a href="#环境色" class="headerlink" title="环境色"></a>环境色</h3></li>
+<li><p>粗略的完成线稿之后，开始铺色，对画面进行定调,可以使用大面积的喷枪上色</p>
+</li>
+<li><p>PS:但是对于ps来说，当笔的像素跳到1000以上之后，会有很可怕的延迟然后电脑开始嗡嗡作响，有些老式机会直接停机，尤其是联想的。。。真的，再好的pc机都会出现这种现象，不要问我怎么知道的</p>
+</li>
+<li><p>这里稍微提一下：<br>在笔刷这一部分真的还是专业的绘图软件比较好，毕竟ps只是图像处理工具</p>
+</li>
+<li><p>推荐的绘图工具有：</p>
 <ul>
-<li>t+1时刻系统状态的概率分布只和t时刻的状态有关，与t时刻以前的状态无关；</li>
-<li>从t时刻到t+1时刻的状态转移和t的值无关。（有兴趣深入了解可以阅读《信息论与编码》电子科技大学出版第二章第七节：马尔可夫信源）</li>
+<li>sai</li>
+<li>painter</li>
 </ul>
 </li>
-<li><p>那么在得到一个足够完善的词料库之后，我们通过统计词频，就可以通过计算得到一个句子的出现的概率，自然概率越高，这个句子就符合该语料下的规则。</p>
-</li>
-<li><p>这里又提出了一个概念即n-gram语言模型</p>
-</li>
-<li><p>由刚刚的统计语言模型，我们不妨假设wi的概率由w1，……wi-1来决定，那么设这个特定的一组序列w，……，wi-1成为wi的历史（history）</p>
-</li>
-<li><p>显然我们意识到一个问题：随着历史基元的增长，不同的历史（路径）会按照指数级增长。对于第i个统计基元，历史基元的个数为i-1，如果共有L个不同的基元，则i基元就有Li-1种不同的历史情况。模型中有Lm个自由参数P（wm|w1……wm-1）.<br><img src="https://wx2.sinaimg.cn/mw1024/006KEMKngy1fohmud54pqj30i309bgm7.jpg" alt="alter"></p>
-</li>
-<li><p>那么这里举个例子，当L=5000，m=3，自由参数的数目为1250亿。自然这时我们必须想一个解决的方法，这里最直接的想法就是减少历史基元的个数即使用等价类，利用一个映射，将w1w2……wi-1映射到 S（w1w2……wi-1）。自然等价类的数目是远远小于原来不同历史基元的数目的。</p>
-</li>
-<li>P（wi|w1……wi-1）=P（wi| S（w1w2……wi-1））</li>
-<li><p>有了这个想法，我们自然就要考虑如果划分等价类。基于这种想法，我们提出了n元文法</p>
+<li><p>但是以上的软件也有自己的缺点</p>
 <ul>
-<li>n=1——》uni-gram 即wi独立于历史</li>
-<li>n=2——》bi-gram 基于1阶马尔可夫链</li>
-<li>n=3——》tri-gram 基于2阶马尔可夫链</li>
-</ul>
-</li>
-<li><p>再举一个简单的例子：</p>
-<ul>
-<li>给定句子：John read a book</li>
-<li>增加标记：(BOS)John read a book(EOS)</li>
-<li>Unigram：(BOS), John, read, a, book, (EOS)</li>
-<li>Bigram: ((BOS)John), (John read), (read a), (a book), (book (EOS))</li>
-<li>Trigram: ((BOS)John read), (John read a), (read a book), (a book (EOS))</li>
-</ul>
-</li>
-<li><p>即二元文法的概率为：</p>
-</li>
-<li>P(John read a book) =P(John(BOS)×P(read|John)×P(a|read)×P(book|a)×P((EOS)|book)</li>
-</ul>
-<h5 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h5><ul>
-<li>如果汉字的总数为：N<ul>
-<li><strong>一元语法：</strong></li>
-<li>1）样本空间为 N</li>
-<li>2）只选择使用频率最高的汉字</li>
-<li><strong>二元语法：</strong></li>
-<li>1）样本空间为 N2</li>
-<li>2）效果比一元语法明显提高</li>
-<li><strong>估计对汉字而言四元语法效果会好一些</strong></li>
-<li>智能狂拼、微软拼音输入法基于 n-gram.</li>
-</ul>
-</li>
-<li>那么问题又来了，如何得到n-gram文法？<ul>
-<li><strong>这里引入两个概念：</strong></li>
-<li>Training data（训练语料）：用于建立模型，确定模型参数的已知语料</li>
-<li>Maximum Likelihood Evaluation（最大似然估计）：用相对频率计算概率的方法<h6 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h6></li>
-</ul>
-</li>
-<li>例如，这里给定训练语料：<ul>
-<li>“John read Moby Dick”，</li>
-<li>“Mary read a different book”,</li>
-<li>“She read a book by Cher”</li>
-</ul>
-</li>
-<li>那么2元文法求句子的概率为多少？（读者最好自己思考一下）</li>
-</ul>
-<hr>
-<h6 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h6><ul>
-<li><p>首先我们对句子进行标识</p>
-<ul>
-<li>(BOS)John read Moby Dick(EOS)</li>
-<li>(BOS)Mary read a different book(EOS)</li>
-<li>(BOS)She read a book by Cher(EOS)</li>
-</ul>
-</li>
-<li>通过上面所说的二元文法概念我们很容易得到John read a book的概率为：</li>
-</ul>
-<p><img src="http://wx2.sinaimg.cn/large/006KEMKngy1fohmuldbelj30ox09dmyt.jpg" alt="alter"></p>
-<ul>
-<li><p>但是如果我们要处理的句子是：Cher read a book呢？</p>
-</li>
-<li><p>很快我们发现，语料中并没有cher这个单词，那么自然这个句子的概率就是0了。</p>
-</li>
-<li>这其实是NLP中常见的问题，即数据匮乏而引起的零概率问题，如何解决这个问题，即我们要说明的第二个重点。</li>
-</ul>
-<h2 id="data-smoothing（数据平滑处理）"><a href="#data-smoothing（数据平滑处理）" class="headerlink" title="data smoothing（数据平滑处理）"></a>data smoothing（数据平滑处理）</h2><h3 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h3><ul>
-<li>数据平滑的基本思想可以用一个词语概括：“劫富济贫”</li>
-<li>即使得零概率增值，使得非零概率下调。</li>
-<li>但是这个思想要基于一个基本约束，即：</li>
-</ul>
-<p><img src="http://wx3.sinaimg.cn/mw690/006KEMKngy1fohmuu6gp9j30bp03bwef.jpg" alt="alter"></p>
-<h3 id="方法分类"><a href="#方法分类" class="headerlink" title="方法分类"></a>方法分类</h3><ul>
-<li><p>这里我们介绍一下几种常见的数据平滑处理方法：</p>
-<ul>
-<li>1）    拉普拉斯平滑（加1法）</li>
-<li>2）    古德图灵法（good-turing）</li>
-<li>3）    Katz后退法（Back-off）</li>
-<li>4）    绝对值减法（Absolute Discounting）</li>
-<li>5）    线性减值法（Linear Discounting）</li>
-</ul>
-</li>
-<li><p>这里重点讲一下（1）和（2）</p>
-</li>
-</ul>
-<h4 id="加一法："><a href="#加一法：" class="headerlink" title="加一法："></a>加一法：</h4><h5 id="拉普拉斯平滑"><a href="#拉普拉斯平滑" class="headerlink" title="拉普拉斯平滑"></a>拉普拉斯平滑</h5><ul>
-<li><p>对于2-gram：<br><img src="http://wx3.sinaimg.cn/mw690/006KEMKngy1fohmuxqrn1j30ef07q74l.jpg" alt="alter"></p>
-</li>
-<li><p>其中，V 为被考虑语料的词汇量（全部可能的基元数）。</p>
-</li>
-</ul>
-<h6 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h6><ul>
-<li>(BOS)John read Moby Dick(EOS)</li>
-<li>(BOS)Mary read a different book(EOS)</li>
-<li><p>(BOS)She read a book by Cher(EOS)</p>
-<ul>
-<li><strong> P(Cher read a book) = P(Cher|(BOS)×P(read|Cher)×P(a|read)×P(book|a)× P((EOS)|book)</strong></li>
+<li>例如sai在厚涂方面表现一般，笔触过于平滑，很难处理细节，色彩上也过于小清新，表现的风格会收到局限。</li>
+<li>painter则是专业的绘图软件，但是占用的内存较大，颜色丰富，笔触细腻，问题是对于刚刚入门的萌新们，看到那么多的功能会很懵逼的好嘛（躲在墙角瑟瑟发抖）。</li>
+<li>另一方面，painter在大陆的受众比较少，在网上找资源教程什么的比较难，台湾等部分地区使用比较广泛。</li>
 </ul>
 </li>
 </ul>
 <ul>
-<li><p><strong>没有处理：</strong></p>
-<ul>
-<li>P(Cher|(BOS)) = 0/3</li>
-<li>P(read|Cher) = 0/1</li>
-<li>P(a|read) = 2/3</li>
-<li>P(book|a) = 1/2</li>
-<li>P((EOS)|book)= 1/2</li>
-</ul>
+<li><p>如果不用大笔刷铺色的话，其实ps里还是用其他很好用的工具可以代替的</p>
 </li>
-<li><p>词汇量：|V|＝11</p>
+<li><p>这里我使用了工具栏处的“渐变”处理,对角线一拉，马上自然过渡<br><img src="https://wx4.sinaimg.cn/mw1024/006KEMKnly1foj8fu1vq1j30k00f7aam.jpg" alt=""></p>
 </li>
-<li><p><strong>平滑以后：</strong></p>
-<ul>
-<li>P(Cher|(BOS)) = (0+1)/(11+3) = 1/14</li>
-<li>P(read|Cher) = (0+1)/(11+1) = 1/12</li>
-<li>P(a|read) = (1+2)/(11+3) = 3/14</li>
-<li>P(book|a) = (1+1)/(11+2) = 2/13</li>
-<li>P((EOS)|book)= (1+1)/(11+2) = 2/13</li>
-<li><strong>P(Cher read a book) = 0.00003</strong></li>
-</ul>
+<li><p>然后在用笔刷增加一点笔触进去<br><img src="https://wx3.sinaimg.cn/mw1024/006KEMKnly1foj8fwh910j30k00b3jrt.jpg" alt=""></p>
 </li>
 </ul>
+<h3 id="光效果"><a href="#光效果" class="headerlink" title="光效果"></a>光效果</h3><ul>
+<li><p>例如加入一下水波的痕迹，然后开始加入发光的效果（效果如下）<br><img src="https://wx4.sinaimg.cn/mw1024/006KEMKnly1foj8g0z5snj30k00di3z0.jpg" alt=""></p>
+</li>
+<li><p>为什么这么早加入发光特效</p>
 <ul>
-<li><p><strong>同理:</strong></p>
-<ul>
-<li>P(John|(BOS)) = 2/14, P(read|John) = 2/12,</li>
-<li>P(a|read) = 3/14, P(book|a) = 2/13,</li>
-<li>P(John read a book)=P(John|(BOS))×P(read|John)×P(a|read)×P(book|a)×P((EOS)|book)=0.0001</li>
+<li><p>因为这样对于后面展现主题的细节有好处啊</p>
+</li>
+<li><p>有了光之后，你就能知道在鲸鱼的什么地方是暗面，什么地方是亮面了啊。。。这样该有高光的地方你就加去嘛</p>
+</li>
+<li><p>对于小白，这一招还是蛮好用的</p>
+</li>
 </ul>
 </li>
 </ul>
-<h4 id="减值法："><a href="#减值法：" class="headerlink" title="减值法："></a>减值法：</h4><ul>
-<li>基本思想：修改训练样本中事件的实际计数，使样本中(实际出现的)不同事件的概率之和小于1，剩余的概率量分配给未见概率。</li>
-<li>以上所说的2）3）4）5）均属于减值法</li>
-<li>这里重点说一下2）Good-Turing估计</li>
-<li>这种估计适用于大词汇集产生的符合多项式分布的大量的观察数据。</li>
-</ul>
-<h5 id="Good-Turing估计"><a href="#Good-Turing估计" class="headerlink" title="Good-Turing估计"></a>Good-Turing估计</h5><ul>
-<li><p>内容：</p>
 <ul>
-<li>假设 N 是原来训练样本数据的大小， nr 是在样本中正好出现 r 次的事件的数目(在这里，事件为 n-gram w1, w2, …, wn)，即：出现 1 次的 n1个，出现 2 次的 n2个, ……<br><img src="http://wx3.sinaimg.cn/mw690/006KEMKngy1fohmv1bxizj30mj0au759.jpg" alt="alter"></li>
-</ul>
+<li><p>好了，说一下发光特效怎么加</p>
+<ul>
+<li><p>首先选一张深海的光源图</p>
+</li>
+<li><p>例如<br><img src="https://wx4.sinaimg.cn/mw1024/006KEMKnly1foj8g3yy9yj30k00baaaj.jpg" alt=""></p>
 </li>
 </ul>
-<h6 id="例子-2"><a href="#例子-2" class="headerlink" title="例子"></a>例子</h6><ul>
-<li>这里也举一个例子，引用</li>
+</li>
+<li><p>然后选择你想要的光源部分</p>
+<ul>
+<li>control+c</li>
+<li>control+v</li>
 </ul>
-<p><img src="http://wx4.sinaimg.cn/mw690/006KEMKngy1fohmv58n38j316g0ma7ea.jpg" alt="alter"></p>
+</li>
+<li><p>复制得到的图层命名为“光源”</p>
+</li>
+<li><p>放在线稿的下面，铺色的上面</p>
+</li>
+<li><p>然后在图层效果里选择——颜色加深<br><img src="https://wx1.sinaimg.cn/mw1024/006KEMKnly1foj8g6po3gj30f60hadgf.jpg" alt=""></p>
+</li>
+</ul>
+<h3 id="细节上色"><a href="#细节上色" class="headerlink" title="细节上色"></a>细节上色</h3><ul>
+<li><p>首先完善一下鲸鱼的感觉，塑造一下明暗面：<br><img src="https://wx1.sinaimg.cn/mw1024/006KEMKnly1foj9m6lfmuj30k00dkgm4.jpg" alt=""></p>
+</li>
+<li><p>这里新建一个图层，用模糊笔刷浓度调节到40～50%之间，给鲸鱼的脊背上色。</p>
+</li>
+<li>高光的部分用30号笔刷上色。</li>
+</ul>
+<p><img src="https://wx2.sinaimg.cn/mw1024/006KEMKnly1foj8yndtzgj30k00bndg8.jpg" alt=""></p>
+<ul>
+<li>通过光线来判断亮面和高光的位置。</li>
+<li>现在我们再处理一下人物，虽然这幅图的人物不是重点。</li>
+<li>我们来看一下这个略low的小人。</li>
+</ul>
+<p><img src="https://wx2.sinaimg.cn/mw1024/006KEMKnly1foj8ypnih8j30k00dhaan.jpg" alt=""></p>
+<ul>
+<li>现在我们给小人上一些颜色。</li>
+<li>注意上色的时候不能用过于鲜艳的颜色，不然会显得画面很突兀。</li>
+</ul>
+<p><img src="https://wx3.sinaimg.cn/mw1024/006KEMKnly1foj8yrxvmtj30k00c90t3.jpg" alt=""></p>
+<ul>
+<li><p>现在我们看看这幅图的整体效果：<br><img src="https://wx2.sinaimg.cn/mw1024/006KEMKnly1foj8yu6ilxj30k00dkdgd.jpg" alt=""></p>
+</li>
+<li><p>审视一下有没有什么问题，然后重头戏就来了——为画面加入细节。</p>
+</li>
+<li><p>一幅画一眼看上去颜色不能辣眼睛，这是刚刚一些列做的事</p>
+</li>
+<li><p>而一幅画到底耐不耐，这里继续在画面的主体（鲸鱼）上加入细节，这里就可以好好利用鲸落的主题了，就是那种虽死犹生的衰败的美感嘛（原谅我糟糠的语言表达。。。）</p>
+</li>
+<li><p>加入细节的地方要用更细腻的笔触，这里选用的是25号笔刷加入纹路。</p>
+</li>
+<li><p>一点一点的擦去线稿里粗糙的线条,用30号笔刷制造伤痕。</p>
+</li>
+<li><p>我们在来看一下效果：<br><img src="https://wx3.sinaimg.cn/mw1024/006KEMKnly1foj8z290h7j30k00bpglz.jpg" alt=""></p>
+</li>
+<li><p>其实细节还可以再加很多，例如后期看可以为了让害民啊看起啦更真实，在加入气泡，血丝，小鱼之类的,这里由于时间的关系就不多说了。</p>
+</li>
+<li><p>如果只是单纯的一幅图的画，（好吧作为一个完成度不是特别高的图，例如小人那个地方我就比较偷懒。。。）也就差不多了。</p>
+</li>
+</ul>
+<h3 id="关于字体"><a href="#关于字体" class="headerlink" title="关于字体"></a>关于字体</h3><ul>
+<li>首先在素材包里打开字体图片</li>
+</ul>
+<p><img src="https://wx4.sinaimg.cn/mw1024/006KEMKnly1foj9mbx36uj30k00b7t90.jpg" alt=""></p>
+<ul>
+<li><p>然后在右下角处面板点开通道页<br><img src="https://wx3.sinaimg.cn/mw1024/006KEMKnly1foj9mg952cj30ew0la3yp.jpg" alt=""></p>
+</li>
+<li><p>点击右下角的将通道作为选区载入<br><img src="https://wx3.sinaimg.cn/mw1024/006KEMKnly1foj9mjpkhpj309s052aa1.jpg" alt=""></p>
+</li>
+<li><p>再点击菜单栏的选择——》反选</p>
+</li>
+<li>接下来就是复制、粘贴了<br><img src="https://wx2.sinaimg.cn/mw1024/006KEMKnly1foj9mz1ls9j30k009r3yx.jpg" alt=""></li>
+</ul>
+<p><img src="https://wx2.sinaimg.cn/mw1024/006KEMKnly1foj9l2t0mlj30k00f2jsa.jpg" alt=""></p>
+<ul>
+<li>粘贴到新建的文件后会在原先的背景上新增图层，也就是我们刚刚复制的文字图层。</li>
+<li>但是文字太小了，所以这里进行放大文字。</li>
+<li><p>点击菜单栏——》编辑——》变化——》缩放<br><img src="https://wx4.sinaimg.cn/mw1024/006KEMKnly1foj9l550raj30k00o4abd.jpg" alt=""></p>
+</li>
+<li><p>最后成品<br><img src="https://wx2.sinaimg.cn/mw1024/006KEMKnly1foj9n4mutrj30k00bbq3g.jpg" alt=""></p>
+</li>
+</ul>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li><p>其余几种减值法的数据平滑读者可以查询其余资料，这里就不累述了。这里我只是简单的对这四种减值法比较，读者可以通过比较进行针对的查询。</p>
-<ul>
-<li>Good-Turing 法：对非0事件按公式削减出现的次 数，余留出来的概率均分给0概率事件。</li>
-<li>Katz 后退法：对非0事件按Good-Turing法计算减 值，余留出来的概率按低阶分布分给0概率事件。</li>
-<li>绝对减值法：对非0事件无条件削减某一固定的出现次数值，余留出来的概率均分给0概率事件。</li>
-<li>线性减值法：对非0事件根据出现次数按比例削减次数值，余留出来的概率均分给0概率事件。</li>
-</ul>
-</li>
+<li>这是第一次用ps撸图，不足之处还望见谅。</li>
+<li>时间仓促，有些细节可能有错误，大部分地方大家可以随个人喜好自己添加。</li>
+<li>2017年7月初稿，于2018年2月修订一次，但是发表时间还是写在了2017年7月23日。</li>
+<li>大二时候写的东西了，不够简洁，语言啰嗦，感谢您观看到最后！</li>
 </ul>
 
         
@@ -754,19 +731,19 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
+        <a href="/2017/09/28/natural-language-processing/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
-    
-        <a href="/2018/02/15/新年小记/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
     
 </nav>
 
@@ -798,7 +775,7 @@
 
     <!-- Sidebar Avatar -->
     <div class="sidebar-image">
-        <img src="http://img.hb.aicdn.com/df28bc097a3dd0306c76c8d1e094a84cd273523597732-cuog9O_fw658" alt="Andyqian's avatar">
+        <img src="https://i.loli.net/2018/02/17/5a87c292a9288.jpg" alt="AndyQian's avatar">
     </div>
 
     <!-- Sidebar Email -->
@@ -852,7 +829,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">3</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -863,7 +840,7 @@
         <li class="dropdown">
             <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
                 
-                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                    <i class="material-icons sidebar-material-icons">apps</i>
                 
                 分类
                 <b class="caret"></b>
@@ -879,7 +856,7 @@
     <!-- Pages  -->
     
         <li>
-            <a href="#about" title="About">
+            <a href="/about.html" title="About">
                 
                     <i class="material-icons sidebar-material-icons">person</i>
                 
@@ -888,13 +865,45 @@
         </li>
         
     
+        <li>
+            <a href="/tags.html" title="Tags">
+                
+                    <i class="material-icons sidebar-material-icons">bookmark</i>
+                
+                Tags
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/gallery.html" title="Image">
+                
+                    <i class="material-icons sidebar-material-icons">photo</i>
+                
+                Image
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links.html" title="Friends">
+                
+                    <i class="material-icons sidebar-material-icons">people</i>
+                
+                Friends
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
 
     <!-- Article Number  -->
     
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">3</span>
+                <span class="sidebar-badge">4</span>
             </a>
         </li>
         
