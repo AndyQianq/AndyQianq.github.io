@@ -4,6 +4,52 @@
 
     
   <url>
+    <loc>http://AndyQianq.github.io/2018/02/28/mysql/</loc>
+    <lastmod>2018-03-06T16:47:42.345Z</lastmod>
+    <data>
+        <display>
+        <title>mysql的安装\卸载\和链接</title>
+        <pubTime>2018-02-28T02:18:51.000Z</pubTime>
+        
+        <tag>learning</tag>
+         
+        <tag>mysql</tag>
+         
+         
+           
+             
+              <breadCrumb title="school work" url="http://AndyQianq.github.io/categories/school-work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://AndyQianq.github.io/2018/03/01/%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E6%96%B0%E9%97%BB%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2018-03-06T12:55:45.173Z</lastmod>
+    <data>
+        <display>
+        <title>基于web的新闻发布系统</title>
+        <pubTime>2018-03-01T14:10:28.000Z</pubTime>
+        
+        <tag>Java web</tag>
+         
+        <tag>Tomcat</tag>
+         
+        <tag>IDEA</tag>
+         
+         
+           
+             
+              <breadCrumb title="school work" url="http://AndyQianq.github.io/categories/school-work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://AndyQianq.github.io/2018/03/05/typewriter/</loc>
     <lastmod>2018-03-05T09:03:31.937Z</lastmod>
     <data>
@@ -27,30 +73,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://AndyQianq.github.io/2018/03/01/%E5%9F%BA%E4%BA%8Eweb%E7%9A%84%E6%96%B0%E9%97%BB%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2018-03-01T16:02:17.900Z</lastmod>
-    <data>
-        <display>
-        <title>基于web的新闻发布系统</title>
-        <pubTime>2018-03-01T14:10:28.000Z</pubTime>
-        
-        <tag>Java web</tag>
-         
-        <tag>Tomcat</tag>
-         
-        <tag>IDEA</tag>
-         
-         
-           
-             
-              <breadCrumb title="school work" url="http://AndyQianq.github.io/categories/school-work/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://AndyQianq.github.io/2017/04/13/legendre-Jacobi/</loc>

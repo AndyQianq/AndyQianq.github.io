@@ -243,7 +243,7 @@
 
     
         <meta property="article:published_time" content="Thu Mar 01 2018 22:10:28 GMT+0800">
-        <meta property="article:modified_time" content="Fri Mar 02 2018 00:02:17 GMT+0800">
+        <meta property="article:modified_time" content="Tue Mar 06 2018 20:55:45 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -266,7 +266,7 @@
     "mainEntityOfPage": "http://AndyQianq.github.io/2018/03/01/基于web的新闻发布系统/index.html",
     "headline": "基于web的新闻发布系统",
     "datePublished": "Thu Mar 01 2018 22:10:28 GMT+0800",
-    "dateModified": "Fri Mar 02 2018 00:02:17 GMT+0800",
+    "dateModified": "Tue Mar 06 2018 20:55:45 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Celia Qian",
@@ -524,7 +524,7 @@
 </ul>
 <h2 id="第二步-启动Tomcat"><a href="#第二步-启动Tomcat" class="headerlink" title="第二步 启动Tomcat"></a>第二步 <strong>启动Tomcat</strong></h2><ul>
 <li>选择到终端启动Tomcat</li>
-<li>在终端输入安装路径：/Uers/XXX//apache-tomcat-7.0.85/bin</li>
+<li>在终端输入安装路径：/Users/XXX/apache-tomcat-7.0.85/bin</li>
 <li>然后在bin下输入：./startup.sh+回车</li>
 <li>出现以下结果：<blockquote>
 <p>Using CATALINA_BASE:   /Users/XXX/apache-tomcat-7.0.85<br>Using CATALINA_HOME:   /Users/XXX/apache-tomcat-7.0.85<br>Using CATALINA_TMPDIR: /Users/XXX/apache-tomcat-7.0.85/temp<br>Using JRE_HOME:        /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home<br>Using CLASSPATH:       /Users/XXX/apache-tomcat-7.0.85/bin/bootstrap.jar:/Users/XXX/apache-tomcat-7.0.85/bin/tomcat-juli.jar<br>Tomcat started.</p>
@@ -580,6 +580,30 @@
 <blockquote>
 <p>3月1日记录结束<br>完成了基本的环境配置<br>安装部署了tomcat</p>
 </blockquote>
+<ul>
+<li><strong>3月5号更新</strong></li>
+<li><p>主要遇到的问题如下：</p>
+<ul>
+<li>1）tomcat端口被占用</li>
+<li>2）mysql的启动密码忘了。。。。</li>
+<li>3）测试java和mysql的链接问题</li>
+</ul>
+</li>
+<li><p>解决方案：</p>
+<ul>
+<li><p>问题1）：</p>
+<blockquote>
+<p>进入终端，输入：<br>lsof -i :8080（查看是什么进程占用了端口）<br>kill 进程号（PID对于的数字）<br>博主发现是QQ和java程序占用了8080端口，导致tomcat的自测页面出现一片空白，做到以上步骤之后，再重启tomcat就恢复正常了。</p>
+</blockquote>
+</li>
+<li><p>问题2）3）：</p>
+<blockquote>
+<p>直接看我的在<a href="">mysql的安装\卸载\配置</a>中有详细解说</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
 
         
     
@@ -636,7 +660,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2018/02/27/区块链/" id="post_nav-older" class="next-content">
+        <a href="/2018/02/28/mysql/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
@@ -737,7 +761,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">2</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
         
@@ -755,7 +779,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/hobbies/">hobbies<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/movies/">movies<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/music/">music<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/notes/">notes<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/school-work/">school work<span class="sidebar_archives-count">6</span></a>
+                <a class="sidebar_archives-link" href="/categories/hobbies/">hobbies<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/movies/">movies<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/music/">music<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/notes/">notes<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/school-work/">school work<span class="sidebar_archives-count">7</span></a>
             </ul>
         </li>
         
@@ -811,7 +835,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">13</span>
+                <span class="sidebar-badge">14</span>
             </a>
         </li>
         
