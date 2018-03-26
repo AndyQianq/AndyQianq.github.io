@@ -47,7 +47,7 @@
     
     <title>
         
-            sublime text 安装以及配置 | 
+            网站攻击的可能情况 | 
         
         Celia‘s blog
     </title>
@@ -58,7 +58,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content=",learning,sublime">
+    <meta name="keywords" content=",web">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -219,7 +219,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Celia‘s blog">
-    <meta name="msapplication-starturl" content="http://AndyQianq.github.io/2018/02/26/sublime text 安装以及配置/">
+    <meta name="msapplication-starturl" content="http://AndyQianq.github.io/2018/03/26/网站攻击可能的情况/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Celia‘s blog">
@@ -234,16 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://AndyQianq.github.io/2018/02/26/sublime text 安装以及配置/">
+    <meta property="og:url" content="http://AndyQianq.github.io/2018/03/26/网站攻击可能的情况/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="sublime text 安装以及配置 | Celia‘s blog">
+    <meta property="og:title" content="网站攻击的可能情况 | Celia‘s blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    <meta property="og:article:tag" content="learning"> <meta property="og:article:tag" content="sublime"> 
+    <meta property="og:article:tag" content="web"> 
 
     
-        <meta property="article:published_time" content="Mon Feb 26 2018 12:16:46 GMT+0800">
-        <meta property="article:modified_time" content="Mon Feb 26 2018 01:45:37 GMT+0800">
+        <meta property="article:published_time" content="Mon Mar 26 2018 22:10:28 GMT+0800">
+        <meta property="article:modified_time" content="Mon Mar 26 2018 22:16:42 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +251,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://AndyQianq.github.io/2018/02/26/sublime text 安装以及配置/index.html" />
+        <link rel="canonical" href="http://AndyQianq.github.io/2018/03/26/网站攻击可能的情况/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,10 +263,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://AndyQianq.github.io/2018/02/26/sublime text 安装以及配置/index.html",
-    "headline": "sublime text 安装以及配置",
-    "datePublished": "Mon Feb 26 2018 12:16:46 GMT+0800",
-    "dateModified": "Mon Feb 26 2018 01:45:37 GMT+0800",
+    "mainEntityOfPage": "http://AndyQianq.github.io/2018/03/26/网站攻击可能的情况/index.html",
+    "headline": "网站攻击的可能情况",
+    "datePublished": "Mon Mar 26 2018 22:10:28 GMT+0800",
+    "dateModified": "Mon Mar 26 2018 22:16:42 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Celia Qian",
@@ -284,7 +284,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",learning,sublime",
+    "keywords": ",web",
     "description": "",
 }
 </script>
@@ -344,6 +344,15 @@
     <!-- Left aligned menu below button -->
     
     
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#跨站点脚本攻击"><span class="post-toc-number">1.</span> <span class="post-toc-text">跨站点脚本攻击</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#cookie的作用"><span class="post-toc-number">2.</span> <span class="post-toc-text">cookie的作用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#XSS攻击的种类"><span class="post-toc-number">3.</span> <span class="post-toc-text">XSS攻击的种类</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#缓冲区溢出攻击"><span class="post-toc-number">4.</span> <span class="post-toc-text">缓冲区溢出攻击</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#DOS攻击"><span class="post-toc-number">5.</span> <span class="post-toc-text">DOS攻击</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SYN洪水攻击"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">SYN洪水攻击</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#死亡之ping-pingofdeath"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">死亡之ping (pingofdeath)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#UDP泛洪"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">UDP泛洪</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Land（LandAttack）攻击"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">Land（LandAttack）攻击</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#泪滴攻击"><span class="post-toc-number">6.</span> <span class="post-toc-text">泪滴攻击</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#IP地址扫描攻击"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">IP地址扫描攻击</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Smurf攻击"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">Smurf攻击</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Fraggle攻击"><span class="post-toc-number">6.3.</span> <span class="post-toc-text">Fraggle攻击</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#电子邮件炸弹"><span class="post-toc-number">6.4.</span> <span class="post-toc-text">电子邮件炸弹</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#畸形消息攻击"><span class="post-toc-number">6.5.</span> <span class="post-toc-text">畸形消息攻击</span></a></li></ol></li></ol>
+    </ul>
+    
 
 
 
@@ -361,10 +370,10 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://i.loli.net/2018/02/26/5a92f639b1478.jpg)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://i.loli.net/2018/03/26/5ab900bd64058.jpg)">
     
             <p class="article-headline-p">
-                sublime text 安装以及配置
+                网站攻击的可能情况
             </p>
         </div>
 
@@ -383,7 +392,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Celia Qian</strong>
-        <span>2月 26, 2018</span>
+        <span>3月 26, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -405,7 +414,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=http://AndyQianq.github.io/2018/02/26/sublime text 安装以及配置/">
+        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=http://AndyQianq.github.io/2018/03/26/网站攻击可能的情况/">
     
 </ul>
 
@@ -419,7 +428,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/learning/">learning</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/sublime/">sublime</a>
+        <a class="post_tag-link" href="/tags/web/">web</a>
     </ul>
     
 
@@ -447,7 +456,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=sublime text 安装以及配置&url=http://AndyQianq.github.io/2018/02/26/sublime text 安装以及配置/index.html&pic=http://AndyQianq.github.io/img/favicon.ico&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=网站攻击的可能情况&url=http://AndyQianq.github.io/2018/03/26/网站攻击可能的情况/index.html&pic=http://AndyQianq.github.io/img/favicon.ico&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -456,7 +465,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=sublime text 安装以及配置&url=http://AndyQianq.github.io/2018/02/26/sublime text 安装以及配置/index.html&via=Celia Qian" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=网站攻击的可能情况&url=http://AndyQianq.github.io/2018/03/26/网站攻击可能的情况/index.html&via=Celia Qian" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -465,7 +474,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://AndyQianq.github.io/2018/02/26/sublime text 安装以及配置/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://AndyQianq.github.io/2018/03/26/网站攻击可能的情况/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -474,7 +483,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://AndyQianq.github.io/2018/02/26/sublime text 安装以及配置/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://AndyQianq.github.io/2018/03/26/网站攻击可能的情况/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -499,91 +508,141 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <ul>
-<li><strong>写在前面</strong><ul>
-<li>大二的时候安装过一次，虽然整个界面和布局都很喜欢，可惜当时还是依赖eclipse和visual c。由于用不习惯，一直都不太熟悉操作，最后还是卸载了。</li>
-<li>现在表示又安回来了，还是抓紧时间熟练sublime吧。</li>
+        <h1 id="跨站点脚本攻击"><a href="#跨站点脚本攻击" class="headerlink" title="跨站点脚本攻击"></a><strong>跨站点脚本攻击</strong></h1><ul>
+<li>是当前web应用中最危险和最普遍的漏洞之一。</li>
+<li>通常用于发动cookie窃取、恶意软件传播（蠕虫攻击），会话劫持，恶意重定向。</li>
+<li>攻击者将恶意的javascript代码注入到网站页面中，这样“受害者”的浏览器就会执行攻击者编写的恶意脚本。</li>
+<li>这种漏洞容易找到，但是很难修补。</li>
+<li>由于在网页设计中，我们把级联样式表叫做CSS。因此为了避免混淆，我们把cross-site scripting称为XSS。</li>
+<li>如果对用户输入的数据没有进行正确的编码和过滤，这个被注入恶意脚本将被发送给其他用户。对浏览器来说，它没有办法知道它不应该相信一个脚本的合法性。浏览器会正常地把这个脚本当成普通脚本执行，这个时候恶意的操作就不可避免的发生了。大部分的时候，XSS是用来窃取cookie，或窃取有效用户的会话令牌session，以此来进行会话劫持。</li>
+<li>从本质上理解，XSS就是一种HTML的注入，和传统的buffer overflow是类似</li>
+</ul>
+<h1 id="cookie的作用"><a href="#cookie的作用" class="headerlink" title="cookie的作用"></a><strong>cookie的作用</strong></h1><ul>
+<li>Cookie，有时也用其复数形式Cookies，指某些网站为了辨别用户身份、进行session跟踪而储存在用户本地终端上的数据(通常经过加密)。定义于RFC2109(已废弃)，最新取代的规范是RFC2965。</li>
+<li>也就是说，cookie是用户和服务器之间的桥梁。服务器可以使用session来保存用户的身份信息(ID,购物车等)，但是需要用户在访问网页(发送HTTP数据包)的时候附带上相应的cookie，通过cookie中的特定值来识别sessionID，才能把单独用户和单独的session联系起来。cookie是有状态HTTP交互的一种重要机制。</li>
+</ul>
+<h1 id="XSS攻击的种类"><a href="#XSS攻击的种类" class="headerlink" title="XSS攻击的种类"></a><strong>XSS攻击的种类</strong></h1><ul>
+<li>对XSS的分类没有明确的标准，但是业界普遍将XSS攻击分为三类。反射型XSS，存储XSS，DOM Based XSS</li>
+<li>非持久性跨站点脚本攻击<ul>
+<li>非持久性XSS也称为反射型跨网站漏洞，是最常见的类型的XSS。漏洞产生的原因是攻击者注入的数据反映在响应中。一个典型的非持久性XSS包含一个带XSS攻击向量的链接。</li>
 </ul>
 </li>
-<li><p><strong>安装MAC 版 sublime text 3 安装插件管理器</strong></p>
+<li><p>持久的跨站点脚本攻击</p>
 <ul>
-<li>打开Sublime，按下Control + 左上角的“～”键（在esc下方）</li>
-<li><p>然后粘贴上下面的代码：</p>
-<blockquote>
-<p>import urllib.request,os; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), ‘wb’).write(urllib.request.urlopen( ‘<a href="http://sublime.wbond.net/" target="_blank" rel="noopener">http://sublime.wbond.net/</a>‘ + pf.replace(‘ ‘,’%20’)).read())</p>
-</blockquote>
-</li>
-<li><p>点击Preferences。如果安装成功了，Package Settings 、Package Control会出现在菜单里了。</p>
-</li>
+<li>持久型跨站点脚本也被称为存储跨站点脚本。它一般发生在XSS攻击向量（一般指XSS攻击代码）存储在网站数据库，当一个页面被用户打开的时候执行。每当用户打开浏览器、脚本执行。持久的XSS相比非持久型的XSS攻击的危害性更大，因为每当用户打开了页面，查看内容时脚本将自动执行。谷歌的orkut曾经就遭受到XSS。</li>
 </ul>
 </li>
-<li><p><strong>关于配置sublime text</strong></p>
-<ul>
-<li>Command+Shift+P：打开命令面板</li>
-<li><p>输入：</p>
-<blockquote>
-<p>install package </p>
-</blockquote>
+<li><p>基于dom的跨站点脚本攻击</p>
 </li>
-<li><p>选择插件</p>
-</li>
+<li>基于DOM的XSS有时候也称为type0 XSS。当用户能够通过交互修改浏览器页面中的DOM并显示在浏览器上时，就有可能产生这种漏洞，从效果上来说它也是反射型XSS。</li>
+<li><strong>XSS漏洞产生的原因</strong></li>
+<li>跨站点脚本的原因是程序员对用户的信任，开发人员轻松地认为用户永远不会试图执行什么出格的是钱，所以他们创建应用程序的时候没有使用任何额外的代码来过滤用户输入以阻止任何恶意的活动。另一个原因是，这种攻击有许多的变体，用制造出一种行之有效的XSS过滤器是一件比较困难的事情。</li>
 </ul>
+<h1 id="缓冲区溢出攻击"><a href="#缓冲区溢出攻击" class="headerlink" title="缓冲区溢出攻击"></a><strong>缓冲区溢出攻击</strong></h1><ul>
+<li><p>其目的在于扰乱具有某些特权运行的程序的功能，这样可以使得攻击者取得吃程序的控制权，如果该程序具有足够的权限，那么整个主机就被控制了。一般而言，攻击者攻击ROOT程序，然后执行类似“exec（sh）”的执行代码来获得root权限的shell。为了达到这个目的，攻击者必须达到如下的两个目标：</p>
+<blockquote>
+<p>1.在程序的地址空间里安排适当的代码<br>2.通过适当的初始化寄存器和内存，让程序跳转到入侵者安排的地址空间执行。</p>
+</blockquote>
 </li>
-<li><p><strong>安装主题</strong></p>
-<ul>
-<li>本次安装选择的主题为：Afterglow</li>
-<li>提供者：José María Clemente(<a href="https://github.com/YabataDesign" target="_blank" rel="noopener">github链接</a>)</li>
-<li>Open <code>Command Palette</code> using menu item <code>Tools -&gt; Command Palette...</code>, or <code>Cmd+Shift+P</code> (OS X) <code>Ctrl+Shift+P</code> (Win/Linux)</li>
+<li><p>根据这个两个目标对缓存区溢出的哦你关机进行分类。</p>
+</li>
+<li>在程序的地址空间里安排适当的代码的方法</li>
+<li>两种在被攻击程序地址空间里安排攻击代码的方法：</li>
+<li>1.植入法</li>
+<li>攻击者向被攻击的程序输入的一个字符串，程序会把这个字符串放到缓存区里。这个字符串包含的资料是可以在这个被攻击的硬件【平台上运行的指令序列。在这里，攻击者用被攻击程序的缓存区来存放攻击代码。缓存区可以设在任何地方。</li>
+<li>2.利用已经存在的代码</li>
+<li>有时候，攻击者想要的代码已经在被攻击的程序中来，攻击者所要做的只是对代码传递一些参数。比如，攻击代码要求执行“exec(bin/sh)”，而在libc库中的代码执行“exec（arg）”，其中arg是一个指向一个字符串的指针参数，那么攻击者只要把传入的参数指针改向指向“/bin/sh”。</li>
 </ul>
-<ul>
-<li>Type <code>Package Control: Install Package</code></li>
-<li>Search <code>Theme - Afterglow</code></li>
-</ul>
-<ul>
-<li>Locate your Sublime Text <code>Packages directory</code> by using the menu item <code>Preferences -&gt; Browse Packages...</code>.</li>
-<li>Then, clone the repository using this command:</li>
-</ul>
+<h1 id="DOS攻击"><a href="#DOS攻击" class="headerlink" title="DOS攻击"></a><strong>DOS攻击</strong></h1><h2 id="SYN洪水攻击"><a href="#SYN洪水攻击" class="headerlink" title="SYN洪水攻击"></a><strong>SYN洪水攻击</strong></h2><ul>
+<li>要理解doe攻击，首先要理解TCP连接的三次握手过程。</li>
+<li><p>在TCP/IP协议中，TCP协议提供可靠的连接服务，采用三次握手建立一个连接。</p>
 <blockquote>
-<p>git clone <a href="https://github.com/Yabatadesign/afterglow-theme/" target="_blank" rel="noopener">https://github.com/Yabatadesign/afterglow-theme/</a> “Theme - Afterglow”</p>
+<p>第一次握手：建立连接时，客户端发送SYN包（（SYN=i）到服务器，并进入SYN SEND状态，等待服务器确认）<br>第二次握手：服务器收到SYN包必须确认客户的SYN (ACK=i+1 )，同时自己也发送一个SYN包((SYN=j)}即SYN+ACK包，此时服务器进入SYN-RECV状态;<br> 第三次握手:客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK(ACK=j+1)，此包发送完毕，客户端和服务器进入ESTABLISHED状态，完成三次握手，客户端与服务器开始传送数据。</p>
 </blockquote>
 </li>
-<li><p><strong>配置setting</strong></p>
-<ul>
-<li>Activate this theme and color scheme by modifying your user preferences file, which you can find using the menu item <code>Sublime Text -&gt; Preferences -&gt; Settings - User</code>.</li>
-<li><p>Then add the following code settings, depending on the theme you choose. <strong>(After activating the theme, you must restart Sublime Text.)</strong></p>
+<li><p>半连接:  收到SYN包而还未收到ACK包时的连接状态称为半连接，即尚未完全完成三次握手的TCP连接。</p>
 </li>
-<li><p>Settings for Afterglow</p>
-<blockquote>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"theme"</span>: <span class="string">"Afterglow.sublime-theme"</span>,</span><br><span class="line">    <span class="attr">"color_scheme"</span>: <span class="string">"Packages/Theme - Afterglow/Afterglow.tmTheme"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>Settings for Afterglow-blue</p>
-<blockquote>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"theme"</span>: <span class="string">"Afterglow-blue.sublime-theme"</span>,</span><br><span class="line">    <span class="attr">"color_scheme"</span>: <span class="string">"Packages/Theme - Afterglow/Afterglow.tmTheme"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>Settings for Afterglow-magenta</p>
-<blockquote>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"theme"</span>: <span class="string">"Afterglow-magenta.sublime-theme"</span>,</span><br><span class="line">    <span class="attr">"color_scheme"</span>: <span class="string">"Packages/Theme - Afterglow/Afterglow.tmTheme"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>Settings for Afterglow-orange</p>
-<blockquote>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"theme"</span>: <span class="string">"Afterglow-orange.sublime-theme"</span>,</span><br><span class="line">    <span class="attr">"color_scheme"</span>: <span class="string">"Packages/Theme - Afterglow/Afterglow.tmTheme"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>Settings for Afterglow-green</p>
-<blockquote>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"theme"</span>: <span class="string">"Afterglow-green.sublime-theme"</span>,</span><br><span class="line">    <span class="attr">"color_scheme"</span>: <span class="string">"Packages/Theme - Afterglow/Afterglow.tmTheme"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>半连接队列:    在三次握手协议中，服务器维护一个半连接队列，该队列为每个客户端的SYN包(SYN=i )开设一个条目，该条目表明服务器已收到SYN包，并向客户发出确认，正在等待客户的确认包。这些条目所标识的连接在服务器处于SYN-RECV状态，当服务器收到客户的确认包时，删除该条目，服务器进入ESTABLISHED状态。</li>
+<li>Backlog参数:    表示半连接队列的最大容纳数目。</li>
+<li>SYN-ACK重传次数:    服务器发送完SYN-ACK包，如果未收到客户确认包，服务器进行首次重传，等待一段时间仍未收到客户确认包，进行第二次重传，如果重传次数超过系统规定的最大重传次数，系统将该连接信息、从半连接队列中删除。注意，每次重传等待的时间不一定相同。</li>
+<li>半连接存活时间:是指半连接队列的条目存活的最长时间，也即服务从收到SYN包到确认这个报文无效的最长时间，该时间值是所有重传请求包的最长等待时间总和。有时也称半连接存活时间为Timeout时间、SYN-RECV存活时间。</li>
+<li>上面三个参数对系统的TCP连接状况有很大影响。</li>
+<li>SYN洪水攻击属于DoS攻击的一种，它利用TCP协议缺陷，通过发送大量的半连接请求，耗费CPU和内存资源。SYN攻击除了能影响主机外，还可以危害路由器、防火墙等网络系统，事实上SYN攻击并不管目标是什么系统，只要这些系统打开TCP服务就可以实施。从图4-3可看到，服务器接收到连接请求(SYN=i )将此信息加入未连接队列，并发送请求包给客户端( SYN=j,ACK=i+1 )，此时进入SYN-RECV状态。当服务器未收到客户端的确认包时，重发请求包，一直到超时，才将此条目从未连接队列删除。配合IP欺骗，SYN攻击能达到很好的效果，通常，客户端在短时间内伪造大量不存在的IP地址，向服务器不断地发送SYN包，服务器回复确认包，并等待客户的确认，由于源地址是不存在的，服务器需要不断的重发直至超时，这些伪造的SYN包将长时间占用未连接队列，正常的SYN 请求被丢弃，目标系统运行缓慢，严重者引起网络堵塞甚至系统瘫痪。</li>
+<li><strong>防御方法</strong></li>
+<li>第一种是缩短SYN Timeout时间</li>
+<li>第二种方法是设置SYN Cookie，就是给每一个请求连接的IP地址分配一个Cookie，如果短时间内连续受到某个IP的重复SYN报文，就认定是受到了攻击，以后从这个IP地址来的包会被一概丢弃。<br><code>&gt;netstat -n -p tcp &gt;result.txt</code><blockquote>
+<p> SYN Cookies 的使用不与任何协议定义冲突，照理来说它该和所有的 TCP 实现兼容。然而，当 SYN Cookies 使用的时候，会发生两种值得注意的变化：<br> 首先，服务器只能编码八种 MSS 数值，因为只有 3 位二进制空间可用。<br> 其次，这个服务器必须拒绝所有的TCP 选用项，例如大型窗口和时间戳，因为服务器会在信息被用其他方式存储时丢弃 SYN 队列条目。<br> 尽管这些限制将不可避免地导致一个不如最佳的体验，它们的效果很少被客户端注意到——这些改变只在被攻击时值得注意。在这样的情况下，牺牲 TCP 选项来保护连接一般被认为是合乎情理的。<br> Linux内核从 2.6.26 版本开始为 TCP 选用项加入了有限的支持，通过把它们编码在时间戳内实现。<br> 较新的TCP Cookie 传输（TCPCT）标准被设计用来克服 SYN Cookies 的这些问题，并且在各种方面改进这套机制。不像 SYN Cookies，TCPCT 是一个 TCP 拓展并且要求两端点都支持 TCPCT。</p>
 </blockquote>
 </li>
 </ul>
+<h2 id="死亡之ping-pingofdeath"><a href="#死亡之ping-pingofdeath" class="headerlink" title="死亡之ping (pingofdeath)"></a><strong>死亡之ping (pingofdeath)</strong></h2><ul>
+<li><p>ICMP(InternetControlMessageProtocol，Internet控制信息协议)在Internet上用于错误处理和传递控制信息。最普通的ping程序就是这个功能。而在TCP/IP的RFC文档中对包的最大尺寸都有严格限制规定，许多操作系统的TCP/IP协议栈都规定ICMP包大小为64KB，且在对包的标题头进行读取之后，要根据该标题头里包含的信息来为有效载荷生成缓冲区。”PingofDeath”就是故意产生畸形的测试Ping（PacketInternetGroper）包，声称自己的尺寸超过ICMP上限，也就是加载的尺寸超过64KB上限，使未采取保护措施的网络系统出现内存分配错误，导致TCP/IP协议栈崩溃，最终接收方宕机。</p>
 </li>
-<li><p><strong>sublime text 的一些在mac上的快捷键</strong></p>
-<blockquote>
-<p>Command+Shift+P：打开命令面板<br>Command+D：选择单词，重复可增加选择下一个相同的单词<br>Command +P：搜索项目中的文件<br>Ctrl+G：跳转到第几行<br>Command +W：关闭当前打开文件<br>Command +Shift+W：关闭所有打开文件<br>Command +L：选择行，重复可依次增加选择下一行<br>Command +Shift+L：选择多行<br>Command +Shift+Enter：在当前行前插入新行<br>Command +X：删除当前行(其实是剪贴)<br>Command +F：当前文件查找内容<br>Command +Shift+F：工程内查找内容<br>Command +R：前往<br>method Command +N：新建窗口<br>Command +B: Build代码<br>Commad +/：注释当前行<br>Commad +Shift+/：当前位置插入注释<br>Alt+Command+数字：分屏显示，1是默认，2是竖分，3是横分<br>Command+数字：切换打开第N个文件</p>
-</blockquote>
+<li><p><strong>防御方法</strong></p>
 </li>
+<li>1、用高级设置法预防Ping</li>
+<li>2、用网络防火墙阻隔Ping<br>使用防火墙来阻隔Ping是最简单有效的方法，现在基本上所有的防火墙在默认情况下都启用了ICMP过滤的功能。</li>
+<li>3、启用IP安全策略防Ping</li>
+<li>4、修改TTL值防Ping<br>许多入侵者喜欢用TTL值来判断操作系统，他们首先会Ping一下你的机子，如看到TTL值为128就认为你的系统为Windows NT/2000，如果TTL值为32则认为目标主机操作系统为Windows 95/98，<br>如果为TTL值为255/64就认为是UNIX/Linux操作系统。既然入侵者相信TTL值所反应出来的结果，那么我们不妨修改TTL值来欺骗入侵者，达到保护系统的目的</li>
+<li>5、防火墙在处理Ping of Death攻击报文时，是通过判定数据包的大小是否大于65535字节，如果数据包大于65535字节，则判定为攻击报文，直接丢弃。</li>
+</ul>
+<h2 id="UDP泛洪"><a href="#UDP泛洪" class="headerlink" title="UDP泛洪"></a><strong>UDP泛洪</strong></h2><ul>
+<li>UDPflood攻击：如今在Internet上UDP（用户数据包协议）的应用比较广泛，很多提供WWW和Mail等服务设备通常是使用Unix的服务器，它们默认打开一些被黑客恶意利用的UDP服务。如echo服务会显示接收到的每一个数据包，而原本作为测试功能的chargen服务会在收到每一个数据包时随机反馈一些字符。UDPflood假冒攻击就是利用这两个简单的TCP/IP服务的漏洞进行恶意攻击，通过伪造与某一主机的Chargen服务之间的一次的UDP连接，回复地址指向开着Echo服务的一台主机，通过将Chargen和Echo服务互指，来回传送毫无用处且占满带宽的垃圾数据，在两台主机之间生成足够多的无用数据流，这一拒绝服务攻击飞快地导致网络可用带宽耗尽。</li>
+<li><strong>防御方法</strong></li>
+<li>UDP协议与TCP 协议不同，是无连接状态的协议，并且UDP应用协议五花八门，差异极大，因此针对UDP Flood的防护非常困难。其防护要根据具体情况对待：</li>
+<li>判断包大小，如果是大包攻击则使用防止UDP碎片方法：根据攻击包大小设定包碎片重组大小，通常不小于1500.在极端情况下，可以考虑丢弃所有UDP碎片。</li>
+<li>攻击端口为业务端口：根据该业务UDP最大包长设置UDP最大包大小以过滤异常流量。</li>
+<li>攻击端口为非业务端口：一个是丢弃所有UDP包，可能会误伤正常业务;一个是建立UDP连接规则，要求所有去往该端口的UDP包，必须首先与TCP端口建立TCP连接。不过这种方法需要很专业的防火墙或其他防护设备支持。</li>
+</ul>
+<h2 id="Land（LandAttack）攻击"><a href="#Land（LandAttack）攻击" class="headerlink" title="Land（LandAttack）攻击"></a><strong>Land（LandAttack）攻击</strong></h2><ul>
+<li>在Land攻击中，黑客利用一个特别打造的SYN包–它的原地址和目标地址都被设置成某一个服务器地址进行攻击。此举将导致接受服务器向它自己的地址发送SYN-ACK消息， 结果这个地址又发回ACK消息并创建一个空连接，每一个这样的连接都将保留直到超时，在Land攻击下，许多UNIX将崩溃，NT变得极其缓慢（大约持续五分钟）。 </li>
+<li><strong>防御方法</strong></li>
+<li>防火墙在处理Land攻击报文时，通过检查TCP报文的源地址和目的地址是否相同，或者TCP报文的源地址是否为环回地址，如果是则丢弃。</li>
+</ul>
+<h1 id="泪滴攻击"><a href="#泪滴攻击" class="headerlink" title="泪滴攻击"></a><strong>泪滴攻击</strong></h1><ul>
+<li>对于一些大的IP数据包，往往需要对其进行拆分传送，这是为了迎合链路层的MTU（最大传输单元）的要求。比如，一个6 000字节的IP包，在MTU为2 000的链路上传输的时候，就需要分成3个IP 包。在IP报头中有一个偏移字段和一个拆分标志（MF）。如果MF标志设置为1，则表示这个IP包是一个大IP包的片段，其中偏移字段指出了这个片段在整个IP包中的位置。例如，对一个6 000字 节的IP包进行拆分（MTU为2 000），则3个片段中偏移字段的值依次为0，2 000，4 000。这样接收端在全部接收完IP数据包后，就可以根据这些信息重新组装这几个分次接收的拆分IP包。在这 里就有一个安全漏洞可以利用了，就是如果黑客们在截取IP数据包后，把偏移字段设置成不正确的值，这样接收端在收到这些分拆的数据包后，就不能按数据包中的偏移字段值正确组合这些拆分的数据包，但接收端会不断尝试，这样就可能致使目标计算机操作系统因资源耗尽而崩溃。</li>
+<li><strong>防御方法</strong></li>
+<li>检测这类攻击的方法是对接收到的分片数据包进行分析，计算数据包的片偏移量（Offset）是否有误。反攻击的方法是添加系统补丁程序，丢弃收到的病态分片数据包并对这种攻击进行审计。尽可能采用最新的操作系统，或者在防火墙上设置分段重组功能，由防火墙先接收到同一原包中的所有拆分数据包，然后完成重组工作，而不是直接转发。因为防火墙上可以设置当出现重叠字段时所采用的规则。</li>
+</ul>
+<h2 id="IP地址扫描攻击"><a href="#IP地址扫描攻击" class="headerlink" title="IP地址扫描攻击"></a>IP地址扫描攻击</h2><ul>
+<li>IP地址扫描攻击是攻击者运用ICMP报文（如Ping和Tracert命令）探测目标地址，或者使用TCP/UDP报文对一定地址发起连接，通过判断是否有应答报文，以确定哪些目标系统确实存活着并且连接在目标网络上。</li>
+<li><strong>防御方法</strong><ul>
+<li>防火墙对收到的TCP、UDP、ICMP报文进行检测，当某源IP地址连续发送报文的目的IP地址与前一个报文的目的IP地址不同时，则记为一次异常，当异常次数超过预定义的阈值时，则认为该源IP的行为为IP地址扫描行为，防火墙会将该源IP地址加入黑名单。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Smurf攻击"><a href="#Smurf攻击" class="headerlink" title="Smurf攻击"></a>Smurf攻击</h2><ul>
+<li>Smurf攻击通过使用将回复地址设置成受害网络的广播地址的ICMP应答请求(ping)数据包，来淹没受害主机，最终导致该网络的所有主机都对此ICMP应答请求做出答复，导致网络阻塞。更加复杂的Smurf将源地址改为第三方的受害者，最终导致第三方崩溃。</li>
+<li>攻击的过程是这样的：Woodlly Attacker向一个具有大量主机和因特网连接的网络的广播地址发送一个欺骗性Ping分组（echo 请求），这个目标网络被称为反弹站点，而欺骗性Ping分组的源地址就是Woolly希望攻击的系统。</li>
+<li>这种攻击的前提是，路由器接收到这个发送给IP广播地址（如206.121.73.255）的分组后，会认为这就是广播分组，并且把以太网广播地址FF:FF:FF:FF:FF:FF:映射过来。这样路由器因因特网上接收到该分组，会对本地网段中的所有主机进行广播。</li>
+<li>读者肯定能够想到下面会发生什么情况。网段中的所有主机都会向欺骗性分组的IP地址发送echo响应信息。如果这是一个很大的以太网段，可以会有500个以上的主机对收到的echo请求进行回复。</li>
+<li>由于多数系统都会尽快地处理ICMP传输信息，Woodlly Attacker把分组的源地址设置为目标系统，因此目标系统都很快就会被大量的echo信息吞没，这样轻而易举地就能够阻止该系统处理其它任何网络传输，从而引起拒绝为正常系统服务。</li>
+<li>这种攻击不仅影响目标系统，还影响目标公司的因特网连接。如果反弹站点具有T3连接（45Mbps），而目标系统所在的公司使用的是租用线路（56Kbps），则所有进出该公司的通讯都会停止下来。<ul>
+<li>这种攻击现在已经很少见,大多数的网络已经对这种攻击免疫了.</li>
+<li><strong>防御方法</strong></li>
+</ul>
+</li>
+<li>配置路由器禁止IP广播包进网</li>
+<li>配置网络上所有计算机的操作系统，禁止对目标地址为广播地址的ICMP包响应。</li>
+<li>被攻击目标与ISP协商，有ISP暂时阻止这些流量。</li>
+<li>对于从本网络向外部网络发送的数据包，本网络应该将其源地址为其他网络的这部分数据包过。</li>
+</ul>
+<h2 id="Fraggle攻击"><a href="#Fraggle攻击" class="headerlink" title="Fraggle攻击"></a>Fraggle攻击</h2><ul>
+<li>类似于Smurf，使用UDP应答消息而非ICMP。UDP端口7（ECHO）和端口19（Chargen）在收到UDP报文后，都会产生回应。在UDP的7号端口收到报文后，会回应收到的内容，而UDP的19号端口在收到报文后，会产生一串字符流。它们都同ICMP一样，会产生大量无用的应答报文，占满网路带宽。攻击者可以向子网广播地址发送源地址为受害网络或受害主机的UDP包，端口号用7或19.子网络启用了此功能的每个系统都会向受害者的主机做出响应，从而引发大量的包，导致受害网络的阻塞或受害主机的崩溃；子网上没有启动这些功能的系统将产生一个ICMP不可达的消息，因而仍然消耗带宽。也可将源端口改为Chargen。目的端口为ECHO，这样会自动不停地产生回应报文，其危害性更大。<ul>
+<li><strong>防御方法</strong></li>
+</ul>
+</li>
+<li>检查进入防火墙的UDP报文，若目的端口号为7或19，则直接拒绝，并将攻击记录到日志，否则允许通过。</li>
+</ul>
+<h2 id="电子邮件炸弹"><a href="#电子邮件炸弹" class="headerlink" title="电子邮件炸弹"></a>电子邮件炸弹</h2><ul>
+<li>电子邮件炸弹是最古老的匿名攻击之一，通过设置一台机器不断的大量的向同一地址发送电子邮件，攻击者能够耗尽接受者网络的带宽。</li>
+<li><strong>防御方法</strong></li>
+<li>对邮件地址进行配置，自动删除来自同一主机的过量或重复的消息。</li>
+</ul>
+<h2 id="畸形消息攻击"><a href="#畸形消息攻击" class="headerlink" title="畸形消息攻击"></a>畸形消息攻击</h2><ul>
+<li>各类操作系统上的许多服务都存在此类问题，由于这些服务在处理信息之前没有进行适当正确的错误校验，在收到畸形的信息可能会崩溃。 </li>
+<li><strong>防御方法</strong></li>
+<li>打最新的服务补丁。</li>
 </ul>
 
         
@@ -627,21 +686,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/02/27/区块链/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2018/02/15/新年小记/" id="post_nav-older" class="next-content">
+        <a href="/2018/03/24/SQL Injection/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
